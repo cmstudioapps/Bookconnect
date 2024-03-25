@@ -1,3 +1,5 @@
+window.addEventListener("load",function() {
+
 var sujestoes = document.getElementById("msg")
 var nome = localStorage.getItem("nome")
 sujestoes.innerHTML = `
@@ -14,3 +16,4 @@ Eu ainda tenho muito a fazer por aqui, e queria pedir a sua ajuda e a todos os u
 
 
 `
+})
