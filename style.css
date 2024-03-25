@@ -1,0 +1,119 @@
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  
+  background-image: url("paisagem-do-mar-a-noite-com-litoral-e-lua-no-ceu_107791-1664.jpg");
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  
+}
+
+header img {
+  
+  height: 300px;
+  
+}
+
+section {
+  
+  margin-top: 30%;
+  
+  
+}
+
+section img {
+  
+  height: 300px;
+  
+}
+
+nav {
+  
+  margin-top: 10%;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  
+  
+    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+    -webkit-backdrop-filter: blur(5px); /* Necessário para compatibilidade com alguns navegadores */
+  
+}
+
+#desfoque {
+  
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+    -webkit-backdrop-filter: blur(5px); /* Necessário para compatibilidade com alguns navegadores */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+details {
+  
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+
+
+#carregando {
+  background-color: mediumorchid;
+  color: white;
+  font-weight: bold;
+  padding: 10%;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  border: none;
+  
+}
+
+#suj {
+  
+  padding: 5%;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  
+}
+
+#ir {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  
+  border: none;
+  
+}
+
+#ir:hover {
+  
+  background-color: greenyellow;
+  color: black;
+  
+  
+  
+}

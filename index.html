@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book connect</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <dialog id="login">
+  </dialog>
+
+ <div id="desfoque">
+   
+ 
+<dialog id="carregando">
+  
+  <h2>Carregando...</h2>
+  
+</dialog>
+
+ </div>
+ 
+  <header>
+    <h2>Book connect</h2>
+    <img src="menina-com-livros-voadores-com-brilho-magico-e-brilhos-ilustracao-de-fantasia-de-desenho-vetorial-de-chi-feliz_107791-7513.jpg" alt="banner">
+    <p id="apresentar"></p>
+  </header>
+  
+  <details>
+    <summary>
+      Clique aqui para abrir ou fechar o CHAT.
+      <br>
+      <p>Fale com os outros Leitores!</p>
+    </summary>
+    <script id="cid0020000372361020291" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 300px;height: 300px;">{"handle":"bookconnect","arch":"js","styles":{"a":"6600cc","b":100,"c":"FFFFFF","d":"FFFFFF","k":"6600cc","l":"6600cc","m":"6600cc","n":"FFFFFF","p":"10","q":"6600cc","r":100,"surl":0,"cnrs":"0.35"}}</script>
+  </details>
+  <br> <br>
+  <details id="indicar">
+  <summary><h3>Indique Livros que ainda não tem aqui:</h3></summary>
+    
+    <form action="https://formsubmit.co/scaio5428@gmail.com" method="post" enctype="multipart/form-data">
+      
+      
+    <h4>Nome do livro</h4>
+     <input type="text" placeholder="Nome do livro" name="Livro" required> 
+      
+  <h4>Fale sobre o livro:</h4>
+  
+  <textarea name="" id="" cols="30" rows="10">Bom, o livro é muito bom por quê...</textarea>
+  
+  <h4>Envie a Capa (opcional)</h4>
+  <input type="file" accept="image/*" name="Capa">
+      
+      <input type="hidden" name="_subject" value="Novo LIVRO!">
+      <input type="hidden" name="_captcha" value="false">
+      
+      <input type="hidden" name="_next" value="https://cmstudioapps.github.io/Bookconnect">
+      <br><br>
+      <button id="ir" type="submit">Enviar</button>
+    </form>
+  </details>
+  
+  <section>
+    <!-- Primeira nav -->
+    <h3>Recomendações:</h3>
+    <nav>
+      <img src="https://i.imgur.com/SpUFscI.jpeg" alt="" onclick="livro1()">
+      <img src="https://i.imgur.com/cIT0xE7.jpeg" alt="" onclick="livro2()">
+      <img src="https://cdn.culturagenial.com/imagens/livro-solitaria.jpg" alt="" onclick="livro3()">
+      <img src="https://casadoestudo.com/wp-content/uploads/2023/02/a-sutil-arte-de-ligar-o-foda-se-1.webp?ezimgfmt=ngcb1/notWebP" alt="" onclick="livro4()">
+    </nav>
+    
+
+  </section>
+  
+<div id="suj">
+  
+  <h2>Mensagem do desenvolvedor:</h2>
+  
+  <p id="msg"></p>
+  
+</div>
+<script src="dev.js">dev.js</script>
+  <script src="main.js"></script>  
+  <script src="response.js"></script>
+  <script>
+    // Chamando a função de reorganização quando a página for carregada
+    window.addEventListener('load', function() {
+      var navs = document.getElementsByTagName('nav');
+      for (var i = 0; i < navs.length; i++) {
+        reorganizarNav(navs[i]);
+      }
+    });
+
+    // Função para reorganizar as tags nav
+    function reorganizarNav(nav) {
+      var imagens = nav.getElementsByTagName('img');
+      for (var i = imagens.length - 1; i >= 0; i--) {
+        nav.appendChild(imagens[Math.floor(Math.random() * (i + 1))]);
+      }
+    }
+
+
+  </script>
+</body>
+<footer>
+Desenvolvido por @Caio | CM STUDIO
+</footer>
+</html>
