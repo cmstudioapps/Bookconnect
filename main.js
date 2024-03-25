@@ -14,6 +14,7 @@ if (!nome) {
   } else {
     
     alert("Ouve um problema, seu nome é muito Grande...")
+location.reload()
     
   }
   
