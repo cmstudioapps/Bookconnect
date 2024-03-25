@@ -7,7 +7,7 @@ if (!nome) {
   
   var nome = prompt("Nos fale seu NOME:","Digite aqui seu nome...")
   
-  if (nome.length <= 7) {
+  if (nome.length <= 10) {
     
     localStorage.setItem("nome",nome)
     
