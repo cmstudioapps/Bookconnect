@@ -48,3 +48,10 @@ window.addEventListener("load",function() {
   carregando.close()
   desfoque.style.display = "none"
 })
+
+setTimeout(()=> {
+
+carregando.close()
+desfoque.style.display = "none"
+
+},30000)
