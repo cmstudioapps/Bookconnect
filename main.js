@@ -50,8 +50,9 @@ window.addEventListener("load",function() {
 })
 
 setTimeout(()=> {
-
+if (desfoque.style.display == "block") {
 carregando.close()
 desfoque.style.display = "none"
+}
 
 },30000)
