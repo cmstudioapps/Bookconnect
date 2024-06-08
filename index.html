@@ -109,6 +109,34 @@
 
 
   </script>
+
+
+<script>
+  // Função para lidar com o clique no item de menu de contexto
+  function ouvirPagina(info, tab) {
+    // Verifica se o navegador suporta a API SpeechSynthesis
+    if ('speechSynthesis' in window) {
+      // Obtém o conteúdo da página
+      var conteudo = document.body.innerText;
+      
+      // Cria um novo objeto SpeechSynthesisUtterance
+      var utterance = new SpeechSynthesisUtterance(conteudo);
+      
+      // Fala o conteúdo
+      window.speechSynthesis.speak(utterance);
+    } else {
+      alert('Desculpe, seu navegador não suporta a API de síntese de fala.');
+    }
+  }
+
+  // Adiciona o item de menu de contexto
+  chrome.contextMenus.create({
+    title: "Ouvir esta página",
+    contexts:["all"],
+    onclick: ouvirPagina
+  });
+</script>
+
 </body>
 <footer>
 Desenvolvido por @Caio | CM STUDIO
